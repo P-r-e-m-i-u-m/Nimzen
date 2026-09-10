@@ -7,5 +7,5 @@ const slidingWindow = async (key, windowMs, max) => {
   await redis.zadd(key, now, now + "-" + Math.random());
   await redis.pexpire(key, windowMs);
   return true;
-};  // Fixed burst exploit - Updated: 2026-08-31
-// build: 1788198818
+};  // Fixed burst exploit - Updated: 2026-09-10
+// build: 1789051814
